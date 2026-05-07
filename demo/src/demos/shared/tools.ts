@@ -2,13 +2,14 @@ import { defineVoiceTool, type UseGhostCursorReturn } from "realtime-voice-compo
 import { toast } from "sonner";
 import { z } from "zod";
 
-export const INTERACTIVE_DEMO_IDS = ["theme", "form", "chess"] as const;
+export const INTERACTIVE_DEMO_IDS = ["theme", "form", "chess", "phone"] as const;
 
 export type InteractiveDemoId = (typeof INTERACTIVE_DEMO_IDS)[number];
 
 const INTERACTIVE_DEMO_PATHS: Record<InteractiveDemoId, string> = {
   chess: "/demo/chess",
   form: "/demo/form",
+  phone: "/demo/phone",
   theme: "/demo/theme",
 };
 

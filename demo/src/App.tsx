@@ -3,6 +3,7 @@ import { Toaster } from "sonner";
 
 import { FormDemoPage } from "./demos/form";
 import { OverviewDemoPage } from "./demos/overview";
+import { PhoneDemoPage } from "./demos/phone";
 import { DemoSessionProvider } from "./demos/shared/session";
 import { ThemeDemoPage } from "./demos/theme";
 import { ChessDemoPage } from "./demos/chess";
@@ -17,6 +18,7 @@ export function App() {
           <Route path="/demo/theme" element={<ThemeDemoPage />} />
           <Route path="/demo/form" element={<FormDemoPage />} />
           <Route path="/demo/chess" element={<ChessDemoPage />} />
+          <Route path="/demo/phone" element={<PhoneDemoPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </DemoSessionProvider>

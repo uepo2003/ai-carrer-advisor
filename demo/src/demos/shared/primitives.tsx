@@ -47,6 +47,7 @@ const DEMO_NAV_ITEMS = [
   { id: "theme", label: "Theme Demo", to: "/demo/theme" },
   { id: "form", label: "Form Demo", to: "/demo/form" },
   { id: "chess", label: "Chess Demo", to: "/demo/chess" },
+  { id: "phone", label: "Phone Demo", to: "/demo/phone" },
 ] as const;
 
 type DemoCodeLanguage = Extract<BundledLanguage, "bash" | "javascript" | "tsx">;
